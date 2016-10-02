@@ -1,0 +1,15 @@
+.login-div {
+    border-radius: 15px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+    padding: 25px;
+    width: 400px;
+    height: 350px;
+    background: white;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: -20%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}

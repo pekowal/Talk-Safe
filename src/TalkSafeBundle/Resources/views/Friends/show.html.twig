@@ -1,0 +1,35 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}TalkSafeBundle:Friends:show{% endblock %}
+
+{% block body %}
+    {{ parent() }}
+{% endblock %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-offset-3 col-sm-6">
+                <form id="addFriendFrom" class="form-inline">
+                    <div class="form-group">
+                        <label for="searchFriends">Nazwa:</label>
+                        <input type="text" class="form-control" id="addFriend" placeholder="Dodaj znajomego">
+                    </div>
+                    <button type="submit" class="btn btn-default">Dodaj</button>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            {% for friend in friends %}
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        {{ dump(friends) }}
+                        {{ friend.username }}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock %}
