@@ -1,0 +1,25 @@
+{% extends '::base.html.twig' %}
+
+
+{% block body %}
+    {{ parent() }}
+
+{% endblock %}
+
+{% block content %}
+
+    <div class="jumbotron">
+        <h1 class="h1-responsive">Zacznij rozmawiać!</h1>
+        <p class="lead">Zaproś użytkowników do rozmowy i zacznijcie rozmawiać bezpiecznie.</p>
+        <hr class="m-y-2">
+        <p>Wszystkie wiadomości są szyfrowane i zapisane w bazie danych.</p>
+        <p class="lead">
+            <a href="/conversation/new" class="btn btn-primary btn-lg" role="button">Wybierz rozmówców</a>
+        </p>
+    </div>
+
+        {{ dump(result) }}
+
+{% endblock %}
+    {% block javascripts %}
+    {% endblock %}
